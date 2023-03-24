@@ -1,0 +1,198 @@
+@keyframes move__diferenciais {
+    from {
+        margin-top: -80px;
+    }
+    to {
+        margin-top: 15px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+}
+.container .diferenciais {
+    width: 100%;
+    background: #004C2E;
+    height: 80px;
+}
+.diferenciais div span {
+    color: white;
+}
+.diferenciais div {
+    margin-top: -80px;
+}
+.produto_certificado {
+    animation: move__diferenciais 0.5s linear forwards 0.3s;
+}
+.qualidade {
+    animation: move__diferenciais 0.5s linear forwards 0.6s;
+}
+.departamento_engenharia {
+    animation: move__diferenciais 0.5s linear forwards 0.8s;
+}
+.banner {
+    width: 100%;
+    height: 550px;
+    background: url('../img/banner.webp') top left no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.servico_especializado {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-5%, -50%);
+    max-width: 500px;
+    border-radius: 10px;
+}
+.servico_especializado .title h3 {
+    font-size: 28px;
+}
+.servico_especializado .title .text_servico span {
+    font-size: 21px;
+    line-height: 5px;
+}
+.p-3 button {
+    border: 3px solid #004C2E;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+}
+.p-3 button:hover {
+    background: #004C2E;
+    transition: background 0.3s;
+}
+.p-3 button:hover a {
+    color: white;
+    transition: color 0.3s;
+}
+.p-3 button a {
+    color: black;
+}
+.politica__qualidade {
+    width: 100%;
+    text-align: center;
+}
+.qualidades__text div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.qualidades__text span img {
+    width: 70px;
+    height: 70px;
+}
+.qualidades__text div:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s linear;
+}
+.products {
+    width: 100%;
+}
+.product-1 {
+    width: 20%;
+    border: 1px solid #004C2E;
+    border-radius: 10px;
+    position: relative;
+}
+.product-1:hover {
+    background: #004C2E;
+    color: white;
+    transition: 0.3s;
+}
+.product-1 img {
+    width: 100%;
+    border-radius: 20px;
+}
+.product-1 .text-center span {
+    font-size: 15px;
+}
+.button__ver__mais button {
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    max-width: 200px;
+    background: transparent;
+    border: 2px solid #004C2E;
+    cursor: pointer;
+}
+.button__ver__mais button:hover {
+    background: #004C2E;
+    color: white;
+    transition: 0.3s;
+}
+.contatos span i {
+    color: #004C2E;
+}
+.certificacoes {
+    background: linear-gradient(to bottom, #FFFFFF, #004C2E 40%);
+}
+@media screen and (max-width: 1050px) {
+    .certificacoes .img__certificados {
+        flex-direction: column;
+    }
+    .img__certificados div {
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width: 900px) {
+    .contatos {
+        flex-direction: column;
+    }
+    .contatos span {
+        margin: 5px 0;
+    }
+    .product-1 .text-center span {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 536px) {
+    .container .diferenciais {
+        font-size: 12px;
+    }
+    .banner .servico_especializado {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90% !important;
+    }
+    .banner .servico_especializado .title h3 {
+        font-size: 20px;
+    }
+    .banner .servico_especializado .text_servico span {
+        font-size: 16px;
+    }
+    .politica__qualidade .qualidades__text {
+        flex-direction: column;
+    }
+    .politica__qualidade .qualidades__text div {
+        width: 100%;
+        padding: 40px 0;
+    }
+    .products {
+        flex-direction: column;
+    }
+    .product-1 {
+        width: 70%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .product-1 img {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 388px) {
+    .container .diferenciais {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    .banner .servico_especializado .title h3 {
+        font-size: 16px;
+    }
+    .banner .servico_especializado .text_servico span {
+        font-size: 12px;
+    }
+}

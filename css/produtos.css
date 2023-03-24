@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.products {
+    width: 100%;
+}
+.product-1 {
+    width: 20%;
+    border: 1px solid #004C2E;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px 10px;
+}
+.product-1:hover {
+    background: #004C2E;
+    color: white;
+    transition: 0.3s;
+}
+.product-1 img {
+    width: 100%;
+    border-radius: 20px;
+}
+.product-1 .text-center span {
+    font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+    .products {
+        flex-direction: column;
+    }
+    .products .product-1 {
+        width: 100%;
+        max-width: 300px;
+    }
+    .product-1 .text-center span {
+        font-size: 20px;
+    }
+}

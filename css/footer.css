@@ -1,0 +1,16 @@
+footer {
+    background: #004C2E url('../img/banner.webp') top left no-repeat;
+    height: 400px;
+    background-size: cover;
+}
+.img__footer {
+    background: linear-gradient(to bottom, #004C2E, #004c2e51);
+    height: 400px;
+}
+.logo__footer {
+    height: inherit;
+}
+.container {
+    padding: 0;
+    max-width: 1200px !important;
+}

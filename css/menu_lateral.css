@@ -1,0 +1,55 @@
+@keyframes lateral__icons {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.menu__lateral {
+    width: 69px;
+    height: 300px;
+    background: linear-gradient(to bottom,#004C2E, #81B19E);
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 1;
+}
+.menu1 i {
+    animation: lateral__icons 0.4s linear forwards;
+}
+.menu2 i {
+    animation: lateral__icons 0.4s linear forwards 0.3s;
+}
+.menu3 i {
+    animation: lateral__icons 0.4s linear forwards 0.6s; 
+}
+.menu4 i {
+    animation: lateral__icons 0.4s linear forwards 0.9s;
+}
+.menu__lateral span i {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    transform: translateX(50px);
+    opacity: 0;
+}
+.menu__lateral span a:hover i {
+    color: black;
+    margin-left: 15px;
+    transition: margin-left 0.3s;
+}
+@media screen and (max-width: 536px) {
+    .menu__lateral {
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%, -60%) rotate(-90deg);
+    }
+    .menu__lateral span a i {
+        transform: rotate(90deg) !important;
+    }
+}

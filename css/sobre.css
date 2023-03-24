@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2 {
+    color: #004C2E;
+}
+iframe {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    margin: 10px 10px;
+}
+main section div article {
+    margin: 0 20px;
+}
+main section .mais__credibilidade article {
+    text-align: right;
+    width: 75%;
+}
+.title {
+    width: 25%;
+}
+@media screen and (max-width: 1032px) {
+    main section > div {
+        flex-direction: column;
+        text-align: center;
+    }
+    main section .mais__credibilidade article {
+        text-align: center;
+        width: 100%;
+    }
+    main section div article {
+        margin: 0;
+    }
+    main section .mais__credibilidade {
+        flex-direction: column-reverse;
+    }
+    .title {
+        width: 100%;
+    }
+}
